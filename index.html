@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <div class="alert alert-danger" role="alert" id="usernameAlert">
+        <span class="octicon octicon-x hide-alert" aria-hidden="true"></span>
+        <span class="sr-only">Error:</span>
+        Username already taken!
+    </div>
+    <div class="alert alert-danger" role="alert" id="userAlert">
+        <span class="octicon octicon-x hide-alert" aria-hidden="true"></span>
+        <span class="sr-only">Error:</span>
+        Username does not exist!
+    </div>
+    <div class="alert alert-warning" role="alert" id="passwordAlert">
+        <span class="octicon octicon-x hide-alert" aria-hidden="true"></span>
+        <span class="sr-only">Error:</span>
+        Incorrect password!
+    </div>
+    <div class="alert alert-warning" role="alert" id="invalidAlert">
+        <span class="octicon octicon-x hide-alert" aria-hidden="true"></span>
+        <span class="sr-only">Error:</span>
+        Please enter valid username and password!
+    </div>
+
+    <div class="card loginPage">
+        <h1 class="card-header text-xs-center">Todoist</h1>
+        <div class="card-block">
+            <button class="btn btn-default btn-block" id="loginBtn">Login</button>
+            <div class="card-block" id="loginBlock">
+                <form id="loginForm">
+                    <fieldset class="form-group">
+                        <label for="loginName">Username</label>
+                        <input type="text" class="form-control" id="loginName" placeholder="Enter username">
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+                    </fieldset>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <button class="btn btn-default btn-block" id="createUserBtn">Create New User</button>
+            <div class="card-block" id="createUserBlock">
+                <form id="createUserForm">
+                    <fieldset class="form-group">
+                        <label for="createUserName">Username</label>
+                        <input type="text" class="form-control" id="createUserName" placeholder="Enter username">
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for="createUserPassword">Password</label>
+                        <input type="password" class="form-control" id="createUserPassword" placeholder="Password">
+                    </fieldset>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery-2.2.0.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/login.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/octicons/octicons.css">
+<link rel="stylesheet" type="text/css" href="css/app.css">
+</html>
